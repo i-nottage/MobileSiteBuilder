@@ -1,0 +1,164 @@
+._cBox
+{
+	--background-color: #e5eecc;
+	border-style:  2px dashed;
+	border-color: #D0D0D0;
+	height: 150px;
+	width: 150px;
+}
+
+.trash{
+	margin-left: -16px;
+	margin-top: -16px;
+	height: 32px;
+	width: auto;
+	opacity: 0;
+}
+
+.trashIcon{
+	height: 100%;
+	width: auto;
+}
+
+.trash:hover{
+	transition-property: opacity, left, top, height;
+	opacity: .5;
+}
+
+html{
+	height: 110%;
+	background: linear-gradient(top,  #ffb260 0%,#ff7f13 100%);
+}
+
+.menu,.popup{
+	color: #ccc;
+	font-weight: bold;
+	font-style: none;
+	font-family: Arial, sans-serif;
+	background-color: #111;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#toolBar, #menuBar{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding-top: 1%;
+	min-width: 100%;
+	width: 70%;
+	height: 30px;
+	vertical-align: middle;
+	border-style: none;
+}
+
+#menuBar{
+	padding-left: 25px;
+}
+
+#menuButton{
+	float: right;
+	margin-right: 50px;
+	cursor: pointer;
+}
+
+#workarea{
+	min-height: 90.9%;
+	width: 80%;
+	background-color: white;
+	margin-top: 50px;
+	border: 2px double;
+	border-color: #B0B0B0;
+	box-shadow: 10px 10px 5px #111;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body{
+	height: 100%;
+	min-width: 90%;
+	width: 90%;
+	background-color: #555;
+}
+
+#holder {
+	width: 100%;
+	height: 100%;
+}
+
+textarea{
+	background-color: transparent;
+	--background-color: green;
+	resize: none;
+	border-style: none;
+}
+
+._cBoxContent{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -16px;
+	width: 90%;
+	height: 90%;
+}
+
+.wizardButton{
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	font-style: none;
+	font-family: Arial, sans-serif;
+	width: 100px;
+	height: 100%;
+
+	padding-top: px;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.wizardButton{
+	color: #ccc;
+}
+
+#downloadLink{
+	z-index: -10;
+	color: #66CC66;
+	font-style: none;
+}
+
+#downloadLink:hover{
+	color: #99FF99;
+}
+
+.wizardButton:hover{
+	color: #FFFFFF;
+}
+
+a,a:hover,a:visited{
+	border-style: none;
+	text-decoration: none;
+}
+
+.centerPadder{
+	height: 50%;
+}
+
+#popupToolBar{
+	position: fixed;
+	top: 100px;
+}
+
+#linkDestinationMenu{
+	position: fixed;
+	top: 50%;
+	left: 30%;
+	background-color: 
+}
+
+@media only screen and (max-width : 480px) { 
+#toolBar{
+	display: none;
+}
+}
