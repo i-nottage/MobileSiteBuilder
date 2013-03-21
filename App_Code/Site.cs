@@ -30,6 +30,23 @@ namespace DAL
             }
         }
 
+        public static DataTable getSitesByName(string SiteName)
+        {
+            MySql.Data.MySqlClient.MySqlConnection mycon =
+                    new MySqlConnection(_cnnString);
+            try
+            {
+                MySqlDataAdapter adp = new MySqlDataAdapter("SELECT * FROM site WHERE Site_Name LIKE @SiteName", _cnnString);
+                adp.SelectCommand.Parameters.AddWithValue("@SiteName", SiteName + "%");
+                DataSet ds = new DataSet("site");
+                adp.Fill(ds, "site");
+                return ds.Tables["site"];
+            }
+            catch (MySqlException ex)
+            {
+                throw (ex);
+            }
+        }
         public static SiteDT getSiteByName(string SiteName, int DevID)
         {
             DAL.SiteDT ds = new DAL.SiteDT();
