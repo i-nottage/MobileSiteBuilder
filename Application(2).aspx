@@ -1,7 +1,11 @@
-﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeFile="Application.aspx.cs" Inherits="Application" %>
-<html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Application(2).aspx.cs" Inherits="Application_2_" %>
+
+<!doctype html>
+<html lang="en" id="cur">
 <head>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <meta charset="utf-8" />
+  <title>Knit- Web Editor</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
   <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
   <link rel="stylesheet" href="styles/style.css" />
@@ -82,6 +86,7 @@
   </script>
 </head>
 <body>
+
 <div class="popup" id="popupMenu">
 	<ul>
 		<li>Save</li>

@@ -24,8 +24,8 @@
             ControlToValidate="PasswordTextBox" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
         <br />
         <br />
-        <asp:Button ID="LoginButton" runat="server" Text="Login" />
-    
+        <asp:Button ID="LoginButton" runat="server" Text="Login" 
+            onclick="LoginButton_Click" style="height: 26px" />
     </div>
     </form>
 </body>
