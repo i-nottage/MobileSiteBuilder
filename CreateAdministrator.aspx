@@ -8,6 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <h2>Create Administrator</h2>
+    <br />
     <asp:Label ID="UserNameLabel" runat="server" Text="Desired User Name:"></asp:Label>
     <div>
     
