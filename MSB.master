@@ -15,9 +15,23 @@
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
+            <asp:LoginStatus ID="LoginStatus1" runat="server" 
+                onloggingout="LoginStatus1_LoggingOut" />
+        
         </asp:ContentPlaceHolder>
     </div>
     </form>
     </div>
+    <asp:LoginView ID="LoginView1" runat="server">
+        <AnonymousTemplate>
+            
+            You are not logged in. Click the Login link to continue.
+            
+        </AnonymousTemplate>
+        <LoggedInTemplate>
+            You are logged in. Welcome,<asp:LoginName ID="LoginName1" runat="server" />
+            &nbsp;
+        </LoggedInTemplate>
+    </asp:LoginView>
 </body>
 </html>
