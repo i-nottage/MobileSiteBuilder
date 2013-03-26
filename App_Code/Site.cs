@@ -37,7 +37,7 @@ namespace DAL
             try
             {
                 MySqlDataAdapter adp = new MySqlDataAdapter("SELECT * FROM site WHERE Site_Name LIKE @SiteName", _cnnString);
-                adp.SelectCommand.Parameters.AddWithValue("@SiteName", SiteName + "%");
+                adp.SelectCommand.Parameters.AddWithValue("@SiteName", "%" + SiteName + "%");
                 DataSet ds = new DataSet("site");
                 adp.Fill(ds, "site");
                 return ds.Tables["site"];
@@ -52,7 +52,7 @@ namespace DAL
             DAL.SiteDT ds = new DAL.SiteDT();
 
             MySqlDataAdapter adp = new MySqlDataAdapter("SELECT Site_ID,Site_Name,Site_DeveloperID FROM site where Site_Name LIKE @SiteName AND Site_DeveloperID = @DevID", _cnnString);
-            adp.SelectCommand.Parameters.AddWithValue("@SiteName", SiteName + "%");
+            adp.SelectCommand.Parameters.AddWithValue("@SiteName",SiteName + "%");
             adp.SelectCommand.Parameters.AddWithValue("@DevID", DevID);
             adp.SelectCommand.Connection.Open();
             MySqlDataReader dr;

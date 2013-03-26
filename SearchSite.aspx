@@ -9,8 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
-        <asp:Label ID="Label1" runat="server" Text="Enter Search Text" Width="135px"></asp:Label>
+        <h2>Search Sites</h2>
+        <asp:Label ID="Label1" runat="server" Text="Search By Name:" Width="135px"></asp:Label>
         <asp:TextBox ID="SiteNameTextBox" runat="server"></asp:TextBox>
         <br />
         <br />
@@ -19,14 +19,14 @@
         <br />
         <br />
         <br />
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
+        <asp:ObjectDataSource ID="SiteSearchDataSource" runat="server" 
             SelectMethod="getSitesByName" TypeName="DAL.Site">
             <SelectParameters>
                 <asp:ControlParameter ControlID="SiteNameTextBox" Name="SiteName" 
                     PropertyName="Text" Type="String" />
             </SelectParameters>
         </asp:ObjectDataSource>
-        <asp:GridView ID="GridView1" runat="server" DataSourceID="ObjectDataSource1" 
+        <asp:GridView ID="SearchResultsGridView" runat="server" DataSourceID="SiteSearchDataSource" 
             Visible="False">
         </asp:GridView>
     

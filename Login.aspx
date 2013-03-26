@@ -13,16 +13,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p></p>
-</asp:Content>
-
-<<<<<<< HEAD
-=======
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+    
     <div>
     
         <asp:Label ID="UserNameLabel" runat="server" Text="User Name:"></asp:Label>
@@ -42,7 +33,6 @@
         <asp:Button ID="LoginButton" runat="server" Text="Login" />
     
     </div>
-    </form>
-</body>
-</html>
->>>>>>> parent of 9b77a14... new application
+  
+</asp:Content>
+  

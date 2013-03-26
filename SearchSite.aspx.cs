@@ -13,6 +13,6 @@ public partial class SearchSite : System.Web.UI.Page
     }
     protected void SearchButton_Click(object sender, EventArgs e)
     {
-        GridView1.Visible = true;
+        SearchResultsGridView.Visible = true;
     }
 }
