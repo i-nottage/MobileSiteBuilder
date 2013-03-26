@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeFile="Application.aspx.cs" Inherits="Application" %>
-<html>
-<head>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MSB.master" AutoEventWireup="true" CodeFile="Application.aspx.cs" Inherits="Application" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="header" Runat="Server">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
   <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
@@ -80,8 +80,9 @@
 	);
       });
   </script>
-</head>
-<body>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
 <div class="popup" id="popupMenu">
 	<ul>
 		<li>Save</li>
@@ -155,4 +156,5 @@ Where will the link go?
     };
 </script>
 </body>
-</html>
+</asp:Content>
+
